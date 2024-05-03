@@ -1,17 +1,34 @@
-import Image from "next/image";
-import NavigationBar from "./components/navbar";
-import { Inter } from "next/font/google";
+import React from 'react';
+import Navbar from './components/navbar';
+import {HeroSparkles} from './components/hero';
+import About from './components/about';
+import Skills from './components/skills';
+import Projects from './components/project';
+import Contact from './components/contact';
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div>
-      <NavigationBar />
+      <Navbar />
       <main>
-        {/* Your page content here */}
+        <section id="home" className="homeBackground">
+          <HeroSparkles />
+        </section>
+        <section id="about" className="about">
+          <About />
+        </section>
+        <section id="skills" className="skills">
+          <Skills />
+        </section>
+        <section id="projects" className="projects">
+          <Projects />
+        </section>
+        <section id="contact" className="contact">
+          <Contact />
+        </section>
       </main>
     </div>
   );
-}
+};
 
+export default Home;
