@@ -39,6 +39,14 @@ body {
   background-position: center;
 }
 
+.navbar {
+  position: fixed;
+  top: 0; /* Adjust top for positioning */
+  left: 0; /* Adjust left/right for positioning */
+  width: 100%; /* Or set desired width */
+  z-index: 999; /* High z-index for layering */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
