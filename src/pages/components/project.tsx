@@ -5,7 +5,7 @@ const Projects: React.FC = () => {
     return(
     <div className="sectionHeader">
       <div className=" w-full relative max-w-7xl px-40">
-        <h1 className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 relative bg-clip-text text-4xl font-medium tracking-tight text-transparent md:text-7xl">
+        <h1 className="font-bold text-white relative z-20">
           Projects
         </h1>
       </div>

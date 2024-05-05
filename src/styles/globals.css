@@ -45,7 +45,6 @@ body {
   left: 0; /* Adjust left/right for positioning */
   width: 100%; /* Or set desired width */
   z-index: 999; /* High z-index for layering */
-  backdrop-filter: blur(5px);
 }
 
 @layer utilities {
