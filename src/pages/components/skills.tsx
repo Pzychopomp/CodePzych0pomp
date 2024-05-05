@@ -5,7 +5,7 @@ const Skills: React.FC = () => {
     return(
       <div className="sectionHeader">
       <div className=" w-full relative max-w-7xl px-40">
-        <h1 className="font-bold text-white relative z-20">
+        <h1 className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 relative bg-clip-text text-4xl font-medium tracking-tight text-transparent md:text-7xl">
           Skills
         </h1>
       </div>
@@ -24,28 +24,28 @@ export const projects = [
     description:
       "",
     link: "https://cplusplus.com/",
-    image: "https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue.png"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
   },
   {
     title: "Swift",
     description:
       "",
     link: "https://www.swift.org/",
-    image: "https://thumbnail.imgbin.com/13/0/15/imgbin-computer-icons-swift-programming-language-computer-programming-bird-logo-dWpXvMAJ1Ec29LUj3AFiVGUX0_t.jpg"
+    image: "https://www.svgrepo.com/show/452110/swift.svg"
   },
   {
     title: "Python",
     description:
       "",
     link: "https://www.python.org/about/gettingstarted/",
-    image: "https://image.similarpng.com/very-thumbnail/2021/12/Python-programming-logo-on-transparent-background-PNG.png"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png"
   },
   {
     title: "React",
     description:
       "",
     link: "https://react.dev/",
-    image: "https://w7.pngwing.com/pngs/403/269/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.png"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
   },
   {
     title: "TypeScript",
