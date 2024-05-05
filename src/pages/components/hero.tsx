@@ -42,3 +42,5 @@ export function HeroSparkles() {
     </div>
   );
 }
+
+export default HeroSparkles;

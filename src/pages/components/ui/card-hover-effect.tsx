@@ -2,6 +2,7 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 interface HoverEffectProps {
   items: HoverEffectItem[]; // Define interface for item objects
@@ -30,14 +31,15 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
         className
       )}
     >
-      {items.map((item, idx) => (
-        <Link
-          href={item?.link}
-          key={item?.link}
-          className="relative group block p-2 h-full w-full"
-          onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
-        >
+      {items && Array.isArray(items) && items.length > 0 ? (
+        items.map((item, idx) => (
+          <Link
+            href={item?.link}
+            key={item?.link}
+            className="relative group block p-2 h-full w-full"
+            onMouseEnter={() => setHoveredIndex(idx)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
@@ -61,7 +63,10 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
             {item.image && <CardImage src={item.image} alt={item.title} />}
           </Card>
         </Link>
-      ))}
+      ))) : (
+        // Display a message or loading indicator if items is empty or undefined
+        <p>Loading items...</p>
+      )}
     </div>
   );
 };
@@ -130,12 +135,14 @@ export const CardImage = ({
   className?: string 
 }) => {
   return (
-    <img 
-    src={src} 
-    alt={alt} 
-    className={cn(
+    <Image
+      src={src} 
+      alt={alt} 
+      className={cn(
       className, "block object-cover rounded-lg overflow-hidden"
-    )} 
+    )}
     />
   );
 };
+
+export default HoverEffect;
