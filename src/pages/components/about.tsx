@@ -10,10 +10,10 @@ const About: React.FC = () => {
                     About Me
                 </h1>
                 <br></br>
-                <p>I'm a first generation college student in my final semester at California State University, 
+                <p>I&aposm a first generation college student in my final semester at California State University, 
                     Fullerton pursuing a Bachelors of Science for Computer Science. As a son of Vietnamese immigrant parents,
-                    I want to be someone who can make my family proud of the person I've become. Currently situated in 
-                    Garden Grove, CA, I'm aspiring to be a Full Stack Developer creating sleek, modern, and efficent products.
+                    I want to be someone who can make my family proud of the person I&aposve become. Currently situated in 
+                    Garden Grove, CA, I&aposm aspiring to be a Full Stack Developer creating sleek, modern, and efficent products.
                 </p>
             </div>
         </div>
