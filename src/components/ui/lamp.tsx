@@ -22,7 +22,7 @@ export function LampDemo() {
   );
 }
 
-export const LampContainer = ({
+export default const LampContainer = ({
   children,
   className,
 }: {
